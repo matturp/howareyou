@@ -1,0 +1,55 @@
+html, body {
+  margin: 2rem;
+  padding: 0;
+  font-family: 'Corben', cursive;
+  background-color: rgb(240,240,240);
+}
+
+canvas {
+  display: block;
+}
+
+
+.info {
+  width: 95%;
+  height: 2rem;
+  padding: 2rem;
+}
+
+.sketch {
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 30pt;
+  color: #005f73;
+}
+
+p, ol {
+  color: #005f73;
+  font-size: 12pt;
+}
+
+.labeltype {
+  color: #005f73;
+  font-size: 16pt;
+}
+
+.instructions {
+  padding: 2rem;
+}
+
+ul {
+  color: #005f73;
+  font-size: 12pt;
+  width: 40rem;
+}
+
+.descriptors {
+  width: 45rem;
+  height: 25rem;
+  padding: 1rem;
+  background-color: antiquewhite;
+  margin-bottom: 5rem;
+}

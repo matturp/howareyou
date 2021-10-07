@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+    </style>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style2.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/quicksettings.js"></script>
+    <script src="libraries/p5.gui.js"></script>
+  </head>
+
+  <body>
+
+    <h1>How <em>are</em> you?</h1>
+
+    <div class="info">
+      <p>
+      Mental health isn't always easy to talk about. Putting feelings into words can be
+      inaccurate and frustrating. This is a tool that aims to help translate mental health
+      into something tangible that can be used to help understand our own mental health,
+      track our progress, and facilitate open discussion.
+    </p>
+    </div>
+
+    <div class="instructions">
+      <p class="labeltype">Pictogram</p>
+      <ol>
+    <li>Scroll down to generate your mental health pictogram.</li>
+    <li>In the box below are some descriptors for the variables if you need some clarification.</li>
+    <li>Click the download button when you're done to get your pictogram.</li>
+    <li>DM the image to <a href="https://www.instagram.com/howareyoumh/" class="extlink">@howareyoumh</a> on Instagram with a short text response to: 'How are you?'</li>
+    <li>All submissions are posted completely anonymously.</li>
+  </ol>
+    </div>
+      <!-- <p><em>For variables with negative values, -10 is worst, 0 is neutral, 10 is best.<br>
+      For variables with no negative values, 0 is absent, 10 is most intense.</em></p> -->
+      <div class="descriptors">
+      <ul>
+        <li>Mood: Your mood in general. <em>(Bad - Neutral - Good)</em></li>
+        <li>Interest: How much you've been maintining interest in things you usually like. <em>(Disinterested - Neutral - Focused)</em></li>
+        <li>Energy: Your physical energy level. <em>(Tired - Neutral - Buzzing)</em></li>
+        <li>Appetite: Appetite for food and drink. <em>(Undereating - Neutral - Overeating)</em></li>
+        <li>Self worth: Feelings about your sense of worth. <em>(Low - Neutral - High)</em> </li>
+        <li>Physical pain: Presence/intensity of any physical pain. <em>(Absent - Extreme pain)</em></li>
+        <li>Irritability: Degree of recent irritability. <em>(Not irritabile at all - Very irritable)</em></li>
+        <li>Anxiety: Presence/intensity of anxiety. <em>(Calm - Extremely anxious)</em></li>
+        <li>Insomnia: Difficulty with sleeping. <em>(Yes/No)</em></li>
+        <li>Suicidal ideation: Recently contemplated suicide. <em>(Yes/No)</em></li>
+        <li>Brain fog: Difficulty concentrating or remembering things. <em>(Yes/No)</em></li>
+      </ul>
+      </div>
+
+    <script class="sketch" src="sketchv2.js"></script>
+
+  </body>
+    
+</html>
