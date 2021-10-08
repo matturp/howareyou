@@ -34,10 +34,10 @@ function setup(){
   createCanvas(900, 900);
 
   button = createButton('Download Image');
-  button.position(1000, 1670);
+  button.position(1000, 1970);
   button.mousePressed(downloadImage);
 
-  gui = createGui('How are you?').setPosition(1000, 1100);
+  gui = createGui('How are you?').setPosition(1000, 1400);
   sliderRange(0,10,1);
   gui.addGlobals('Mood','Interest','Energy','Appetite','Self_Worth','Physical_Pain','Irritability','Anxiety','Insomnia','Suicidal_Ideation','Brain_Fog');
 }
