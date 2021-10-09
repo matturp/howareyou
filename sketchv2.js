@@ -26,6 +26,8 @@ var Insomnia = false;
 var Irritability = 0;
 var Anxiety = 0;
 var Physical_Pain = 0;
+var Night = false;
+var Day = true;
 
 let button;
 
@@ -34,12 +36,12 @@ function setup(){
   createCanvas(900, 900);
 
   button = createButton('Download Image');
-  button.position(1000, 1970);
+  button.position(1000, 2070);
   button.mousePressed(downloadImage);
 
-  gui = createGui('How are you?').setPosition(1000, 1400);
+  gui = createGui('How are you?').setPosition(1000, 1450);
   sliderRange(0,10,1);
-  gui.addGlobals('Mood','Interest','Energy','Appetite','Self_Worth','Physical_Pain','Irritability','Anxiety','Insomnia','Suicidal_Ideation','Brain_Fog');
+  gui.addGlobals('Day','Night','Mood','Interest','Energy','Appetite','Self_Worth','Physical_Pain','Irritability','Anxiety','Insomnia','Suicidal_Ideation','Brain_Fog');
 }
 
 function draw(){
@@ -49,6 +51,7 @@ function draw(){
 // COLOURS
 
   let black = color('#001219');
+  let nightBlue = color('#003440');
   let darkBlue = color('#005f73');
   let green = color('#0a9396');
   let lightBlue = color('#94d2bd');
@@ -60,6 +63,12 @@ function draw(){
   let wine = color('#9b2226');
 
   // SHAPES
+
+    // TIME OF DAY
+    if ((Night === true)&&(Day===false)){
+      //filter(INVERT);
+      background(nightBlue);
+    }
 
   // MOOD
   push();
@@ -237,6 +246,8 @@ function draw(){
     if (Insomnia === true){
     filter(GRAY);
     }
+
+
 }
 
 function windowResized(){
